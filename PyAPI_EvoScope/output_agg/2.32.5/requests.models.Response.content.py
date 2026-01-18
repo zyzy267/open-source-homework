@@ -1,0 +1,17 @@
+def content(self):
+        """Content of the response, in bytes."""
+
+        if self._content is False:
+            # Read the contents.
+            if self._content_consumed:
+                raise RuntimeError("The content for this response was already consumed")
+
+            if self.status_code == 0 or self.raw is None:
+                self._content = None
+            else:
+                self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+
+        self._content_consumed = True
+        # don't need to release the connection; that's been handled by urllib3
+        # since we exhausted the data.
+        return self._content
