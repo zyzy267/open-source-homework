@@ -1,0 +1,44 @@
+{
+  "library": "requests",
+  "total_versions": 6,
+  "versions": [
+    "2.32.0",
+    "2.32.1",
+    "2.32.2",
+    "2.32.3",
+    "2.32.4",
+    "2.32.5"
+  ],
+  "version_stats": {
+    "2.32.0": {
+      "total_nodes": 539,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    },
+    "2.32.1": {
+      "total_nodes": 539,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    },
+    "2.32.2": {
+      "total_nodes": 541,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    },
+    "2.32.3": {
+      "total_nodes": 543,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    },
+    "2.32.4": {
+      "total_nodes": 543,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    },
+    "2.32.5": {
+      "total_nodes": 543,
+      "max_depth": 3,
+      "nodes_with_children": 114
+    }
+  }
+}
